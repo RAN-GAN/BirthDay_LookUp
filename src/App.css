@@ -3,10 +3,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Keeps the background fixed */
+  background-attachment: fixed;
   overflow-x: hidden;
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -18,7 +20,7 @@ body {
   background-color: rgba(255, 255, 255, 0.605);
   padding: 10px;
   border-radius: 10px;
-  box-sizing: border-box; /* Include padding and border in width */
+  box-sizing: border-box;
 }
 
 .header .element {
