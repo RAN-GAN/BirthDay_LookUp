@@ -1,0 +1,95 @@
+body {
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background fixed */
+  overflow-x: hidden;
+}
+
+.header {
+  font-family: "Merriweather", serif;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.605);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.header .element {
+  flex-grow: 1;
+  text-align: center;
+  color: rgb(20, 26, 36);
+  font-weight: bold;
+}
+
+.header .element:first-child {
+  font-size: 24px;
+}
+
+.header p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.header span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px; /* Add padding to the sides */
+  box-sizing: border-box;
+}
+
+.TodaysBirthday {
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.605);
+  border-radius: 20px;
+  width: 85%; /* Use full width */
+  max-width: 800px; /* Limit maximum width */
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: medium;
+  font-weight: 800;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  color: rgb(24, 23, 23);
+}
+
+.tb {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+hr {
+  border: none;
+  background-color: black !important;
+  height: 3px; /* Adjust height as needed */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header .element {
+    margin-bottom: 10px;
+  }
+}
