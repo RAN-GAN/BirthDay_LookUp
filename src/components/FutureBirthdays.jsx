@@ -12,7 +12,7 @@ function FutureBirthday() {
   const [birthdays, setBirthdays] = useState([]);
 
   useEffect(() => {
-    fetch("http://rangandale.pythonanywhere.com/api/future-birthdays")
+    fetch("https://rangandale.pythonanywhere.com/api/future-birthdays")
       .then((response) => response.json())
       .then((data) => setBirthdays(JSON.parse(data)))
       .catch((error) => console.error("Error:", error));
