@@ -5,6 +5,8 @@ body {
   background-position: center;
   background-attachment: fixed; /* Keeps the background fixed */
   overflow-x: hidden;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 .header {
@@ -16,6 +18,7 @@ body {
   background-color: rgba(255, 255, 255, 0.605);
   padding: 10px;
   border-radius: 10px;
+  box-sizing: border-box; /* Include padding and border in width */
 }
 
 .header .element {
