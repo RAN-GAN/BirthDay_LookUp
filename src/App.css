@@ -98,3 +98,45 @@ hr {
     margin-bottom: 10px;
   }
 }
+
+.login {
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.605);
+  border-radius: 20px;
+  width: 85%; /* Use full width */
+  max-width: 400px; /* Limit maximum width */
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  width: 80%;
+  margin: 10px;
+  height: 1.5rem;
+}
+
+.login {
+  margin-top: 15%;
+}
+
+.LoginButton {
+  width: 80px;
+  background-color: #d5d4d4;
+  border: none;
+  border-radius: 15px;
+}
+.LoginButton:hover {
+  background-color: #7c7b7b;
+}
+.LoginButton:active {
+  background-color: #ffffff;
+}
+h3 {
+  text-align: center;
+}
