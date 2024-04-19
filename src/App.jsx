@@ -6,10 +6,11 @@ import FutureBirthday from "./components/FutureBirthdays";
 import { useState } from "react";
 import "./App.css";
 function App() {
-  const [loggedin, setLoggedin] = useState(false);
+  const [loggedin, setLoggedin] = useState("no");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   function handleLogin(e) {
+    setLoggedin("checking");
     console.log(username);
     console.log(password);
     e.preventDefault();
@@ -35,14 +36,15 @@ function App() {
         return response.json();
       })
       .then((data) => {
-        setLoggedin(true);
+        setLoggedin("yes");
       })
       .catch((error) => {
         console.error("Error:", error);
         alert("Invalid username or password");
+        setLoggedin("no");
       });
   }
-  if (loggedin) {
+  if (loggedin === "yes") {
     return (
       <>
         <Header />
@@ -52,7 +54,7 @@ function App() {
         </div>
       </>
     );
-  } else {
+  } else if (loggedin === "no") {
     return (
       <>
         <Header />
@@ -81,6 +83,14 @@ function App() {
           </div>
         </div>
       </>
+    );
+  } else {
+    return (
+      <div className="Login container">
+        <div className="login">
+          <h3>Please Wait</h3>
+        </div>
+      </div>
     );
   }
 }
